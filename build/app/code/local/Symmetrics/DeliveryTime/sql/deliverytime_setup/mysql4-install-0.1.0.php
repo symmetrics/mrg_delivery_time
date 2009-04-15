@@ -16,6 +16,7 @@ $installer->addAttribute('catalog_product', 'delivery_time', array(
     'comparable' => true,
     'visible_on_front' => true,
     'visible_in_advanced_search' => true,
+    'default' => '2-3 Tage',
 ));
 
 $installer->endSetup();
