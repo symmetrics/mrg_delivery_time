@@ -52,9 +52,8 @@ EXCLUDES = {
 }
 
 DEPENDS_ON_FILES = (
-    'app/core/code/Mage/Adminhtml/Block/Catalog/Product/Grid.php',
-    'app/core/code/Mage/Sales/Block/Order/Item/Renderer/Default.php',
-    'app/core/code/Mage/Eav/Model/Entity/Setup.php',
+    'app/code/core/Mage/Adminhtml/Block/Catalog/Product/Grid.php',
+    'app/code/core/Mage/Sales/Block/Order/Item/Renderer/Default.php',
 )
 
 PEAR_KEY = ''
