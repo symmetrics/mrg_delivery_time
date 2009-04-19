@@ -5,7 +5,7 @@
 # =============================================================================
 NAME = 'symmetrics_module_delivery_time'
 
-TAGS = ('magento', 'module', 'delivery time', 'symmetrics')
+TAGS = ('magento', 'symmetrics', 'module', 'delivery time')
 
 LICENSE = 'AFL 3.0'
 
@@ -59,5 +59,5 @@ DEPENDS_ON_FILES = (
 PEAR_KEY = ''
 
 COMPATIBLE_WITH = {
-    'magento': '1.3.0'
+    'magento': '1.3.1'
 }
