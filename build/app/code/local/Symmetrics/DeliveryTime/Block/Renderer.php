@@ -16,7 +16,7 @@ class Symmetrics_DeliveryTime_Block_Renderer extends Mage_Sales_Block_Order_Item
             $product = Mage::getModel('catalog/product')
                 ->load($item->getProductId())->__toArray();
 
-            if ($product['delivery_time'] != 1 ) {
+            if (array_key_exists('delivery_time', $product) && $product['delivery_time'] != 1 ) {
                 return array(
                     'label' => Mage::helper('catalog')->__('Delivery Time'),
                     'value' => $product['delivery_time'],
