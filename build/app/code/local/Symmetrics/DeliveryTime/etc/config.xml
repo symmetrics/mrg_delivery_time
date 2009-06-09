@@ -19,7 +19,7 @@
             <deliverytime_setup>
                 <setup>
                     <module>Symmetrics_DeliveryTime</module>
-					<class>Symmetrics_DeliveryTime_Model_Setup</class>
+					<class>Mage_Eav_Model_Entity_Setup</class>
                 </setup>
                 <connection>
                     <use>core_setup</use>

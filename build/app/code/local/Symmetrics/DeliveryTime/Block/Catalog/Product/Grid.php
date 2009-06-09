@@ -56,6 +56,7 @@ class Symmetrics_DeliveryTime_Block_Catalog_Product_Grid
                 'type'  => 'number',
                 'index' => 'entity_id',
             ));
+            
         $this->addColumn('name',
             array(
                 'header'=> Mage::helper('catalog')->__('Name'),
