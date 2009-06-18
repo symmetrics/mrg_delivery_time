@@ -36,6 +36,11 @@
                 </connection>
             </catalog_read>
         </resources>
+        <helpers>
+            <deliverytime>
+                <class>Symmetrics_DeliveryTime_Helper</class>
+            </deliverytime>
+        </helpers>
 		<blocks>
 			<adminhtml>
 				<rewrite>
