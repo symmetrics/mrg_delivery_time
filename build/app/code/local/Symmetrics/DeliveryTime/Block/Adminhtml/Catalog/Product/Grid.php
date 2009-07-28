@@ -8,45 +8,15 @@
  * @copyright symmetrics gmbh
  * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-class Symmetrics_DeliveryTime_Block_Catalog_Product_Grid
+class Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid
 	extends Mage_Adminhtml_Block_Catalog_Product_Grid
 {
-    protected function _prepareCollection()
+    public function setCollection($collection)
     {
-        $store = $this->_getStore();
-        $collection = Mage::getModel('catalog/product')->getCollection()
-            ->addAttributeToSelect('sku')
-            ->addAttributeToSelect('name')
-            ->addAttributeToSelect('attribute_set_id')
-            ->addAttributeToSelect('type_id')
-            ->addAttributeToSelect('delivery_time')
-            ->joinField('qty',
-                'cataloginventory/stock_item',
-                'qty',
-                'product_id=entity_id',
-                '{{table}}.stock_id=1',
-                'left');
-
-        if ($store->getId()) {
-            $collection->addStoreFilter($store);
-            $collection->joinAttribute('custom_name', 'catalog_product/name', 'entity_id', null, 'inner', $store->getId());
-            $collection->joinAttribute('status', 'catalog_product/status', 'entity_id', null, 'inner', $store->getId());
-            $collection->joinAttribute('visibility', 'catalog_product/visibility', 'entity_id', null, 'inner', $store->getId());
-            $collection->joinAttribute('price', 'catalog_product/price', 'entity_id', null, 'left', $store->getId());
-        }
-        else {
-            $collection->addAttributeToSelect('price');
-            $collection->addAttributeToSelect('status');
-            $collection->addAttributeToSelect('visibility');
-        }
-
-        $this->setCollection($collection);
-
-        Mage_Adminhtml_Block_Widget_Grid::_prepareCollection();
-        $this->getCollection()->addWebsiteNamesToResult();
-        return $this;
+        $collection->addAttributeToSelect('delivery_time');
+        parent::setCollection($collection);
     }
-
+    
     protected function _prepareColumns()
     {
         $this->addColumn('entity_id',
