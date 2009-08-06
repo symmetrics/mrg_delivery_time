@@ -11,7 +11,7 @@
 <config>
 	<modules>
 		<Symmetrics_DeliveryTime>
-			<version>0.1.0</version>
+			<version>0.1.4</version>
 		</Symmetrics_DeliveryTime>
 	</modules>
 	<global>
@@ -39,7 +39,7 @@
 		<blocks>
 			<adminhtml>
 				<rewrite>
-					<catalog_product_grid>Symmetrics_DeliveryTime_Block_Catalog_Product_Grid</catalog_product_grid>
+					<catalog_product_grid>Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
 				</rewrite>
 			</adminhtml>
 			<sales>
