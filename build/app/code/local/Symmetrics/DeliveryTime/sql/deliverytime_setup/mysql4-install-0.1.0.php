@@ -17,6 +17,4 @@ $installer->addAttribute('catalog_product', 'delivery_time', array(
     'visible_in_advanced_search' => true,
     'default' => '2-3 Tage',
 ));
-
-$this->run($query);
 $installer->endSetup();
