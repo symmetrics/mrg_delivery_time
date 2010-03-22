@@ -5,7 +5,7 @@
 # =============================================================================
 NAME = 'symmetrics_module_delivery_time'
 
-TAGS = ('magento', 'symmetrics', 'module', 'delivery time', 'germanconfig', 'locpack')
+TAGS = ('magento', 'symmetrics', 'module', 'delivery', 'time', 'germanconfig', 'locpack')
 
 LICENSE = 'AFL 3.0'
 
