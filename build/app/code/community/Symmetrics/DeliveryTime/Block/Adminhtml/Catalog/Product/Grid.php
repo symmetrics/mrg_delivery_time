@@ -16,19 +16,21 @@
  * @package   Symmetrics_DeliveryTime
  * @author    symmetrics gmbh <info@symmetrics.de>
  * @author    Sergej Braznikov <sb@symmetrics.de>
- * @copyright 2009 Symmetrics Gmbh
+ * @author    Yauhen Yakimovich <yy@symmetrics.de>
+ * @copyright 2009-2010 symmetrics gmbh
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link      http://www.symmetrics.de/
  */
- 
+
 /**
- * Symmetrics_DeliveryTime_Helper_Data
+ * Symmetrics_LegitimateGerman_Helper_Data
  *
  * @category  Symmetrics
  * @package   Symmetrics_DeliveryTime
  * @author    symmetrics gmbh <info@symmetrics.de>
  * @author    Sergej Braznikov <sb@symmetrics.de>
- * @copyright 2009 Symmetrics Gmbh
+ * @author    Yauhen Yakimovich <yy@symmetrics.de>
+ * @copyright 2009-2010 symmetrics gmbh
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link      http://www.symmetrics.de/
  */
@@ -36,8 +38,8 @@ class Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid
     extends Mage_Adminhtml_Block_Catalog_Product_Grid
 {
     /**
-     * set collection 
-     * 
+     * Set collection
+     *
      * @param collection $collection Collection
      *
      * @return void
@@ -47,46 +49,26 @@ class Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid
         $collection->addAttributeToSelect('delivery_time');
         parent::setCollection($collection);
     }
-    
+
     /**
-     * prepare columns
+     * Prepare columns
      *
      * @return void
      */
     protected function _prepareColumns()
     {
-        $this->addColumn(
-            'delivery_time',
-            array(
-                'header'=> Mage::helper('deliverytime')->__('Delivery time'),
-                'width' => '100px',
-                'type'  => 'text',
-                'index' => 'delivery_time',
-            )
-        );
-
         parent::_prepareColumns();
-    }
-    
-    /**
-     * get Columns
-     *
-     * @return array
-     */
-    public function getColumns()
-    {
-        $columns = parent::getColumns();
-        $newColumnsOrder = array();
-
-        foreach ($columns as $columnId => $column) {
-            if ($columnId =='qty') {
-                $newColumnsOrder[$columnId] = $column;   
-                $newColumnsOrder['delivery_time'] = $columns['delivery_time'];    
-            } elseif ($columnId != 'delivery_time') {
-                $newColumnsOrder[$columnId] = $column;   
-            }
-        }
-
-        return $newColumnsOrder;
+        $columnId = 'delivery_time';
+        $column = array(
+            'header'=> Mage::helper('deliverytime')->__('Delivery time'),
+            'width' => '100px',
+            'type'  => 'text',
+            'index' => 'delivery_time',
+        );
+        $after = 'qty';
+        // add column specifying the proper position, right after quantity
+        $this->addColumnAfter($columnId, $column, $after);
+        // sort all columns, so that a new column order can take place
+        $this->sortColumnsByOrder();
     }
 }
