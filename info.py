@@ -17,15 +17,16 @@ INSTALL_PATH = ''
 # responsibilities
 # =============================================================================
 TEAM_LEADER = {
-    'Sergej Braznikov': 'sb@symmetrics.de'
+    'Torsten Walluhn': 'tw@symmetrics.de'
 }
 
 MAINTAINER = {
-    'Sergej Braznikov': 'sb@symmetrics.de'
+    'Torsten Walluhn': 'tw@symmetrics.de'
 }
 
 AUTHORS = {
-    'Sergej Braznikov': 'sb@symmetrics.de'
+    'Sergej Braznikov': 'sb@symmetrics.de',
+    'Yauhen Yakimovich': 'yy@symmetrics.de'
 }
 
 # =============================================================================

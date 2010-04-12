@@ -1,33 +1,24 @@
-----------------------------------------------------
-Installation
-----------------------------------------------------
+* DOCUMENTATION
 
-1. Ordner app/ in den Projekt-Root kopieren.
+** INSTALLATION
 
-3. Cache löschen
+*** 1. Den Inhalt dieses Archivs in Ihr Magento Verzeichnis extrahieren, so dass 
+       der Ordner app/ in den Projekt-Root kopiert wird. Cache löschen.
 
-4. Frontend aufrufen
+*** 2. Frontend aufrufen. Fertig.
 
-5. Fertig!
-
-----------------------------------------------------
-Beschreibung
-----------------------------------------------------
+** USAGE
 
 Symmetrics_DeliveryTime ermöglicht bei Produkten die
 Lieferzeiten als Produktattribut einzugeben.
 
-Features:
+** FUNCTIONALITY
+*** A: Erstellt Attribut "Lieferzeit" für Produkte mit
+       Standardwert "2-3 Tagen"
+*** B: Neue Spalte "Lieferzeit" in der Produkt-Grid mit
+       einer Filterfunktion
 
-- Erstellt Attribut "Lieferzeit" für Produkte mit
-Standardwert "2-3 Tagen"
-- Neue Spalte "Lieferzeit" in der Produkt-Grid mit
-einer Filterfunktion
-
-----------------------------------------------------
-Funktonalität und Besonderheiten
-----------------------------------------------------
-
+** TECHNINCAL
 Bei der Modulinstallation erstellt das Modul mittels einer
 Migrationsdatei ein neues Produktattribut "delivery_time".
 Dieses Attribut wird durch die Vererbung der Produkt-Grid
@@ -37,8 +28,21 @@ dargestellt.
 Ist das Attribut bei der Produkterstellung nicht gefüllt
 wird der Standardwert "2-3 Tage" benutzt.
 
-----------------------------------------------------
-Probleme
-----------------------------------------------------
-
+** PROBLEMS
 Keine bekannt.
+
+* TESTCASES
+
+** BASIC
+
+*** A:  1. Erstellen Sie ein neues Produkt. Geben Sie einen Wert für 
+           das Attribut "Lieferzeit" ein, stellen Sie dieses Attribut 
+           auf sichtbar und prüfen Sie es im Front-End.
+
+*** B:  2. Gehen Sie Ins Back-End unter "Katalog/Produkte verwalten". 
+           Überprüfen Sie die Filterfunktion für das Attribut "Lieferzeit".
+
+** CATCHABLE
+
+** STRESS
+

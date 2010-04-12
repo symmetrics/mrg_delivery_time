@@ -23,7 +23,7 @@
  */
 
 /**
- * Symmetrics_LegitimateGerman_Helper_Data
+ * Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid
  *
  * @category  Symmetrics
  * @package   Symmetrics_DeliveryTime
@@ -40,7 +40,7 @@ class Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid
     /**
      * Set collection
      *
-     * @param collection $collection Collection
+     * @param object $collection attribute collection used by grid
      *
      * @return void
      */
