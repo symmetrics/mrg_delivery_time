@@ -38,8 +38,7 @@ $initialData = array(
 );
 
 $installer->addAttribute('catalog_product', 'delivery_time', $initialData);
-
-// Unfortunatly the following fields are not processed by addAttribute method.
+// Unfortunately the following fields are not processed by addAttribute method.
 // The code bellow will update default values, used in addAttribute.
 $additionalData = array(
     'is_visible' => true,
