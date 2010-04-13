@@ -12,7 +12,10 @@ Lieferzeiten als Produktattribut einzugeben.
 
 ** FUNCTIONALITY
 *** A: Erstellt Attribut "Lieferzeit" für Produkte mit
-       Standardwert "2-3 Tagen"
+       Standardwert "2-3 Tagen". Dieser Standardwert wird
+       nur bei neu angelegten Produkten eingetragen. Bei 
+       bestehenden Produkten bleibt dieses Feld leer,
+       wenn man nichts einträgt.
 *** B: Neue Spalte "Lieferzeit" in der Produkt-Grid mit
        einer Filterfunktion
 
