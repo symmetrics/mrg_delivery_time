@@ -23,7 +23,7 @@
  */
 
 /**
- * Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid
+ * Overwrite Catalog/Product grid in backend to add delivery time column
  *
  * @category  Symmetrics
  * @package   Symmetrics_DeliveryTime

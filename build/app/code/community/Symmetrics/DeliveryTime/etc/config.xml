@@ -52,8 +52,8 @@
         </resources>
 		<blocks>
 			<adminhtml>
-				<rewrite>
-					<catalog_product_grid>Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
+				<rewrite>	        
+				    <catalog_product_grid>Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
 				</rewrite>
 			</adminhtml>
 		</blocks>

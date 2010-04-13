@@ -23,7 +23,7 @@
  */
 
 /**
- * Symmetrics_DeliveryTime_Helper_Data
+ * Default helper class
  *
  * @category  Symmetrics
  * @package   Symmetrics_DeliveryTime

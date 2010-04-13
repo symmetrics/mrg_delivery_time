@@ -12,6 +12,8 @@
  * obtain it through the world-wide-web, please send an email
  * to license@magentocommerce.com so we can send you a copy immediately.
  *
+ * This setup script will add the delivery time attribute
+ *
  * @category  Symmetrics
  * @package   Symmetrics_DeliveryTime
  * @author    symmetrics gmbh <info@symmetrics.de>
