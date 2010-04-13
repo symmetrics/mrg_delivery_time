@@ -1,11 +1,7 @@
 * DOCUMENTATION
 
 ** INSTALLATION
-
-*** 1. Den Inhalt dieses Archivs in Ihr Magento Verzeichnis extrahieren, so dass 
-       der Ordner app/ in den Projekt-Root kopiert wird. Cache löschen.
-
-*** 2. Frontend aufrufen. Fertig.
+Extrahieren Sie den Inhalt dieses Archivs in Ihr Magento Verzeichnis. Ggf. ist das Leeren/Auffrischen des Magento-Caches notwendig.
 
 ** USAGE
 
@@ -25,11 +21,10 @@ Dieses Attribut wird durch die Vererbung der Produkt-Grid
 Klasse in der Produktliste im Backend als eine neue Spalte
 dargestellt.
 
-Ist das Attribut bei der Produkterstellung nicht gefüllt
+Ist das Attribut bei der Produkterstellung nicht gefüllt,
 wird der Standardwert "2-3 Tage" benutzt.
 
 ** PROBLEMS
-Keine bekannt.
 
 * TESTCASES
 
@@ -45,4 +40,3 @@ Keine bekannt.
 ** CATCHABLE
 
 ** STRESS
-
