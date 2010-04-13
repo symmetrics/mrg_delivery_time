@@ -1,7 +1,9 @@
 * DOCUMENTATION
 
 ** INSTALLATION
-Extrahieren Sie den Inhalt dieses Archivs in Ihr Magento Verzeichnis. Ggf. ist das Leeren/Auffrischen des Magento-Caches notwendig.
+Extrahieren Sie den Inhalt dieses Archivs in Ihr Magento Verzeichnis.
+Ggf. ist das Leeren/Auffrischen des Magento-Caches notwendig. 
+! Das Attribut 'delivery_time' muss dem/einem Attributset hinzugefügt werden. !
 
 ** USAGE
 
