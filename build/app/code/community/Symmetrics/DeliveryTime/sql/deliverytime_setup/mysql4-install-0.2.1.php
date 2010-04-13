@@ -36,7 +36,9 @@ $initialData = array(
     'user_defined' => true,
     'default' => '2-3 Tage',
 );
+
 $installer->addAttribute('catalog_product', 'delivery_time', $initialData);
+
 // Unfortunatly the following fields are not processed by addAttribute method.
 // The code bellow will update default values, used in addAttribute.
 $additionalData = array(
@@ -49,6 +51,7 @@ $additionalData = array(
     'used_in_product_listing' => true,
     'is_html_allowed_on_front' => true,
 );
+
 $installer->updateAttribute('catalog_product', 'delivery_time', $additionalData);
 
 $installer->endSetup();

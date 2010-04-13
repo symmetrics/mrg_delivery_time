@@ -58,16 +58,17 @@ class Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid
     protected function _prepareColumns()
     {
         parent::_prepareColumns();
-        $columnId = 'delivery_time';
+
         $column = array(
-            'header'=> Mage::helper('deliverytime')->__('Delivery time'),
+            'header' => Mage::helper('deliverytime')->__('Delivery time'),
             'width' => '100px',
-            'type'  => 'text',
+            'type' => 'text',
             'index' => 'delivery_time',
         );
-        $after = 'qty';
+
         // add column specifying the proper position, right after quantity
-        $this->addColumnAfter($columnId, $column, $after);
+        $this->addColumnAfter('delivery_time', $column, 'qty');
+
         // sort all columns, so that a new column order can take place
         $this->sortColumnsByOrder();
     }
