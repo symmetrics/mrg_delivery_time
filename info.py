@@ -5,7 +5,7 @@
 # =============================================================================
 NAME = 'symmetrics_module_delivery_time'
 
-TAGS = ('magento', 'symmetrics', 'module', 'delivery', 'time', 'germanconfig', 'locpack')
+TAGS = ('magento', 'symmetrics', 'module', 'delivery', 'time', 'mrg')
 
 LICENSE = 'AFL 3.0'
 
@@ -55,12 +55,11 @@ EXCLUDES = {
 
 DEPENDS_ON_FILES = (
     'app/code/core/Mage/Adminhtml/Block/Catalog/Product/Grid.php',
-    'app/code/core/Mage/Sales/Block/Order/Item/Renderer/Default.php',
 )
 
 PEAR_KEY = ''
 
 COMPATIBLE_WITH = {
-    'magento': ['1.4.0.0'],
+    'magento': ['1.4.0.0', '1.4.0.1'],
     'magento_enterprise': ['1.7.0.0'],
 }

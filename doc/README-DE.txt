@@ -3,10 +3,9 @@
 ** INSTALLATION
 Extrahieren Sie den Inhalt dieses Archivs in Ihr Magento Verzeichnis.
 Ggf. ist das Leeren/Auffrischen des Magento-Caches notwendig. 
-! Das Attribut 'delivery_time' muss dem/einem Attributset hinzugefügt werden. !
+Achtung! Das Attribut 'delivery_time' muss dem/einem Attributset hinzugefügt werden!
 
 ** USAGE
-
 Symmetrics_DeliveryTime ermöglicht bei Produkten die
 Lieferzeiten als Produktattribut einzugeben.
 
@@ -30,11 +29,10 @@ Ist das Attribut bei der Produkterstellung nicht gefüllt,
 wird der Standardwert "2-3 Tage" benutzt.
 
 ** PROBLEMS
+Keine Probleme bekannt.
 
 * TESTCASES
-
 ** BASIC
-
 *** A:  1. Erstellen Sie ein neues Produkt. Geben Sie einen Wert für 
            das Attribut "Lieferzeit" ein, stellen Sie dieses Attribut 
            auf sichtbar und prüfen Sie es im Front-End.
