@@ -31,7 +31,7 @@ $installer->startSetup();
 $initialData = array(
     'label' => 'Lieferzeit',
     'input' => 'text',
-    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL,    
+    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
     'required' => false,
     'user_defined' => true,
     'default' => '2-3 Tage',
@@ -47,7 +47,7 @@ $additionalData = array(
     'is_searchable' => true,
     'is_comparable' => true,
     'is_visible_on_front' => true,
-    'is_visible_in_advanced_search' => true,    
+    'is_visible_in_advanced_search' => true,
     'used_in_product_listing' => true,
     'is_html_allowed_on_front' => true,
 );
