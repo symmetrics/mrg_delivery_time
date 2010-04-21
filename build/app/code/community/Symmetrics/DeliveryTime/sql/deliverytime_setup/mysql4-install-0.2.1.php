@@ -29,12 +29,11 @@ $installer = $this;
 $installer->startSetup();
 
 $initialData = array(
-    'label' => 'Lieferzeit',
-    'input' => 'text',
-    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
-    'required' => false,
-    'user_defined' => true,
-    'default' => '2-3 Tage',
+    'label' => 'Lieferzeit', // frontend_label
+    'input' => 'text',       // frontend_input
+    'required' => false,     // is_required
+    'user_defined' => true,  // is_user_defined
+    'default' => '2-3 Tage', // default_value
 );
 
 $installer->addAttribute('catalog_product', 'delivery_time', $initialData);
@@ -42,6 +41,7 @@ $installer->addAttribute('catalog_product', 'delivery_time', $initialData);
 // Unfortunately the following fields are not processed by addAttribute method.
 // The code bellow will update default values, used in addAttribute.
 $additionalData = array(
+    'is_global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
     'is_visible' => true,
     'is_filterable' => true,
     'is_searchable' => true,
