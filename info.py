@@ -54,7 +54,6 @@ EXCLUDES = {
 }
 
 DEPENDS_ON_FILES = (
-    'app/code/core/Mage/Adminhtml/Block/Catalog/Product/Grid.php',
 )
 
 PEAR_KEY = ''
