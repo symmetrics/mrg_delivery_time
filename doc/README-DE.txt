@@ -10,13 +10,13 @@ Symmetrics_DeliveryTime ermöglicht bei Produkten die
 Lieferzeiten als Produktattribut einzugeben.
 
 ** FUNCTIONALITY
-*** A: Erstellt Attribut "Lieferzeit" für Produkte mit
-       Standardwert "2-3 Tagen". Dieser Standardwert wird
-       nur bei neu angelegten Produkten eingetragen. Bei 
-       bestehenden Produkten bleibt dieses Feld leer,
-       wenn man nichts einträgt.
-*** B: Neue Spalte "Lieferzeit" in der Produkt-Grid mit
-       einer Filterfunktion
+A: Erstellt Attribut "Lieferzeit" für Produkte mit
+   Standardwert "2-3 Tagen". Dieser Standardwert wird
+   nur bei neu angelegten Produkten eingetragen. Bei 
+   bestehenden Produkten bleibt dieses Feld leer,
+   wenn man nichts einträgt.
+B: Neue Spalte "Lieferzeit" in der Produkt-Grid mit
+   einer Filterfunktion
 
 ** TECHNINCAL
 Bei der Modulinstallation erstellt das Modul mittels einer
@@ -33,12 +33,12 @@ Keine Probleme bekannt.
 
 * TESTCASES
 ** BASIC
-*** A:  1. Erstellen Sie ein neues Produkt. Geben Sie einen Wert für 
-           das Attribut "Lieferzeit" ein, stellen Sie dieses Attribut 
-           auf sichtbar und prüfen Sie es im Front-End.
+*** A: Erstellen Sie ein neues Produkt. Geben Sie einen Wert für 
+         das Attribut "Lieferzeit" ein, stellen Sie dieses Attribut 
+         auf sichtbar und prüfen Sie es im Front-End.
 
-*** B:  2. Gehen Sie Ins Back-End unter "Katalog/Produkte verwalten". 
-           Überprüfen Sie die Filterfunktion für das Attribut "Lieferzeit".
+*** B: Gehen Sie Ins Back-End unter "Katalog/Produkte verwalten". 
+         Überprüfen Sie die Filterfunktion für das Attribut "Lieferzeit".
 
 ** CATCHABLE
 
