@@ -39,7 +39,3 @@ Keine Probleme bekannt.
 
 *** B: Gehen Sie Ins Back-End unter "Katalog/Produkte verwalten". 
          Überprüfen Sie die Filterfunktion für das Attribut "Lieferzeit".
-
-** CATCHABLE
-
-** STRESS
