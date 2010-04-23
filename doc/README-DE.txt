@@ -18,7 +18,7 @@ A: Erstellt Attribut "Lieferzeit" für Produkte mit
 B: Neue Spalte "Lieferzeit" in der Produkt-Grid mit
    einer Filterfunktion
 
-** TECHNINCAL
+** TECHNICAL
 Bei der Modulinstallation erstellt das Modul mittels einer
 Migrationsdatei ein neues Produktattribut "delivery_time".
 Dieses Attribut wird durch die Vererbung der Produkt-Grid
