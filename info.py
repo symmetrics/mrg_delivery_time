@@ -47,7 +47,7 @@ NOTES = '''
 # relations
 # =============================================================================
 REQUIRES = [
-    {'magento': '*', 'magento_enterprise': '*'}, 
+    {'magento': '*', 'magento_enterprise': '*'},
 ]
 
 EXCLUDES = {
