@@ -1,14 +1,14 @@
 * DOCUMENTATION
 
-** INSTALLATION
-Extrahieren Sie den Inhalt dieses Archivs in Ihr Magento Verzeichnis.
+** INSTALLATION 
+Extrahieren Sie den Inhalt dieses Archivs in Ihr Magento Verzeichnis. 
 Ggf. ist das Leeren/Auffrischen des Magento-Caches notwendig. 
 Achtung! Das Attribut 'delivery_time' muss dem/einem Attributset 
 hinzugefügt werden!
 
 ** USAGE
-Symmetrics_DeliveryTime ermöglicht bei Produkten die
-Lieferzeit als Produktattribut einzugeben. Das Modul erstellt
+Symmetrics_DeliveryTime ermöglicht bei Produkten die 
+Lieferzeit als Produktattribut einzugeben. Das Modul erstellt 
 ein neues Attribut "Lieferzeit" für Produkte mit dem Standardwert "2-3 Tage"
 (nur für neu angelegte Produkte). Die neue Spalte "Lieferzeit" im 
 Produkt-Grid hat eine Filterfunktion.
@@ -22,17 +22,17 @@ Produkt-Grid hat eine Filterfunktion.
 *** B: Neue Spalte "Lieferzeit" in der Produkt-Grid mit
         einer Filterfunktion.
 
-** TECHNICAL
+** TECHNICAL 
 Bei der Modulinstallation erstellt das Modul mittels einer
-Migrationsdatei ein neues Produktattribut "delivery_time".
-Dieses Attribut wird durch die Vererbung der Produkt-Grid
+ Migrationsdatei ein neues Produktattribut "delivery_time".
+ Dieses Attribut wird durch die Vererbung der Produkt-Grid 
 Klasse in der Produktliste im Backend als eine neue Spalte
-dargestellt.
+ dargestellt. 
 
-Ist das Attribut bei der Produkterstellung nicht gefüllt,
+Ist das Attribut bei der Produkterstellung nicht gefüllt, 
 wird der Standardwert "2-3 Tage" benutzt.
 
-** PROBLEMS
+** PROBLEMS 
 Keine Probleme bekannt.
 
 * TESTCASES
