@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 /**
  * Magento
@@ -17,7 +17,7 @@
  * @package   Symmetrics_DeliveryTime
  * @author    symmetrics gmbh <info@symmetrics.de>
  * @author    Sergej Braznikov <sb@symmetrics.de>
- * @copyright 2009 Symmetrics Gmbh
+ * @copyright 2009-2010 symmetrics gmbh
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link      http://www.symmetrics.de/
  */
@@ -25,7 +25,7 @@
 <config>
 	<modules>
 		<Symmetrics_DeliveryTime>
-			<version>0.1.7</version>
+			<version>0.2.6</version>
 		</Symmetrics_DeliveryTime>
 	</modules>
 	<global>
@@ -39,21 +39,11 @@
                     <use>core_setup</use>
                 </connection>
             </deliverytime_setup>
-            <catalog_write>
-                <connection>
-                    <use>core_write</use>
-                </connection>
-            </catalog_write>
-            <catalog_read>
-                <connection>
-                    <use>core_read</use>
-                </connection>
-            </catalog_read>
         </resources>
 		<blocks>
 			<adminhtml>
 				<rewrite>
-					<catalog_product_grid>Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
+				    <catalog_product_grid>Symmetrics_DeliveryTime_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
 				</rewrite>
 			</adminhtml>
 		</blocks>

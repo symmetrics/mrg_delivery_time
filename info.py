@@ -5,7 +5,7 @@
 # =============================================================================
 NAME = 'symmetrics_module_delivery_time'
 
-TAGS = ('magento', 'symmetrics', 'module', 'delivery', 'time', 'germanconfig', 'locpack')
+TAGS = ('magento', 'symmetrics', 'module', 'delivery', 'time', 'mrg')
 
 LICENSE = 'AFL 3.0'
 
@@ -17,15 +17,16 @@ INSTALL_PATH = ''
 # responsibilities
 # =============================================================================
 TEAM_LEADER = {
-    'Sergej Braznikov': 'sb@symmetrics.de'
+    'Torsten Walluhn': 'tw@symmetrics.de',
 }
 
 MAINTAINER = {
-    'Sergej Braznikov': 'sb@symmetrics.de'
+    'Torsten Walluhn': 'tw@symmetrics.de',
 }
 
 AUTHORS = {
-    'Sergej Braznikov': 'sb@symmetrics.de'
+    'Sergej Braznikov': 'sb@symmetrics.de',
+    'Yauhen Yakimovich': 'yy@symmetrics.de',
 }
 
 # =============================================================================
@@ -46,20 +47,18 @@ NOTES = '''
 # relations
 # =============================================================================
 REQUIRES = [
-    {'magento': '*', 'magento_enterprise': '*'}, 
+    {'magento': '*', 'magento_enterprise': '*'},
 ]
 
 EXCLUDES = {
 }
 
 DEPENDS_ON_FILES = (
-    'app/code/core/Mage/Adminhtml/Block/Catalog/Product/Grid.php',
-    'app/code/core/Mage/Sales/Block/Order/Item/Renderer/Default.php',
 )
 
 PEAR_KEY = ''
 
 COMPATIBLE_WITH = {
-    'magento': ['1.3.2.1', '1.3.2.3', '1.3.2.4', '1.4.0.0'],
-    'magento_enterprise': ['1.3.2.1', '1.3.2.3', '1.3.2.4', '1.7.0.0'],
+    'magento': ['1.4.0.0', '1.4.0.1'],
+    'magento_enterprise': ['1.7.0.0', '1.7.1.0', '1.8.0.0'],
 }

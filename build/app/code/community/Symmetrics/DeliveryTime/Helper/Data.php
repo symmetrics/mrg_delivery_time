@@ -16,23 +16,24 @@
  * @package   Symmetrics_DeliveryTime
  * @author    symmetrics gmbh <info@symmetrics.de>
  * @author    Sergej Braznikov <sb@symmetrics.de>
- * @copyright 2009 Symmetrics Gmbh
+ * @author    Yauhen Yakimovich <yy@symmetrics.de>
+ * @copyright 2009-2010 symmetrics gmbh
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link      http://www.symmetrics.de/
  */
- 
+
 /**
- * Symmetrics_DeliveryTime_Helper_Data
+ * Default helper class
  *
  * @category  Symmetrics
  * @package   Symmetrics_DeliveryTime
  * @author    symmetrics gmbh <info@symmetrics.de>
  * @author    Sergej Braznikov <sb@symmetrics.de>
- * @copyright 2009 Symmetrics Gmbh
+ * @author    Yauhen Yakimovich <yy@symmetrics.de>
+ * @copyright 2009-2010 symmetrics gmbh
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link      http://www.symmetrics.de/
  */
 class Symmetrics_DeliveryTime_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    // code...
 }
