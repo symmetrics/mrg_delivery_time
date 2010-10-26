@@ -32,14 +32,17 @@ $attributeCode = 'delivery_time';
 $groupCode = 'general';
 
 $attributeId = $installer->getAttributeId($entityType, $attributeCode);
-$attributeSetId = $installer->getDefaultAttributeSetId($entityType);
-try {
-    $attributeGroupId = $installer->getAttributeGroupId($entityType, $attributeSetId, $groupCode);
-} catch (Exception $exception) {
-    $attributeGroupId = $installer->getDefaultAttributeGroupId($entityType, $attributeSetId);
-}
 
-$installer->addAttributeToSet($entityType, $attributeSetId, $attributeGroupId, $attributeId);
+if ($attributeId) {
+    $attributeSetId = $installer->getDefaultAttributeSetId($entityType);
+    try {
+        $attributeGroupId = $installer->getAttributeGroupId($entityType, $attributeSetId, $groupCode);
+    } catch (Exception $exception) {
+        $attributeGroupId = $installer->getDefaultAttributeGroupId($entityType, $attributeSetId);
+    }
+
+    $installer->addAttributeToSet($entityType, $attributeSetId, $attributeGroupId, $attributeId);    
+}
 
 $installer->endSetup();
 
