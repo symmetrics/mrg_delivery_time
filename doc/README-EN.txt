@@ -1,45 +1,38 @@
 * DOCUMENTATION
 
 ** INSTALLATION 
-Extrahieren Sie den Inhalt dieses Archivs in Ihr Magento Verzeichnis. 
-Ggf. ist das Leeren/Auffrischen des Magento-Caches notwendig. 
-Achtung! Das Attribut 'delivery_time' muss dem/einem Attributset 
-hinzugefügt werden!
+Extract content of this archive in your Magento directory. 
+It might be necessary to clear/refresh the Magento cache. Attention! The 'delivery_time' 
+attribute must be added to the/a attribute set!
 
 ** USAGE
-Symmetrics_DeliveryTime ermöglicht bei Produkten die 
-Lieferzeit als Produktattribut einzugeben. Das Modul erstellt 
-ein neues Attribut "Lieferzeit" für Produkte mit dem Standardwert "2-3 Tage"
-(nur für neu angelegte Produkte). Die neue Spalte "Lieferzeit" im 
-Produkt-Grid hat eine Filterfunktion.
+Symmetrics_DeliveryTime allows to enter delivery time as a product attribute.
+The module creates a new attribute "delivery time" for products with default " 2-3 days "
+(only for newly created products). A new column "delivery time" has a filter function in 
+a product grid.
 
 ** FUNCTIONALITY
-*** A: Erstellt Attribut "Lieferzeit" für Produkte mit
-        Standardwert "2-3 Tagen". Dieser Standardwert wird
-        nur bei neu angelegten Produkten eingetragen. Bei 
-        bestehenden Produkten bleibt dieses Feld leer,
-        wenn man nichts einträgt.
-*** B: Neue Spalte "Lieferzeit" in der Produkt-Grid mit
-        einer Filterfunktion.
+*** A: Creates a "delivery time" attribute for products with
+        default value "2-3 days". This default value is specified only for newly created products. For 
+        the existing products this field remains empty, if nothing is entered.     
+*** B: Creates a new column "delivery time" with a filter function in the product grid. 
 
 ** TECHNICAL 
-Bei der Modulinstallation erstellt das Modul mittels einer
- Migrationsdatei ein neues Produktattribut "delivery_time".
- Dieses Attribut wird durch die Vererbung der Produkt-Grid 
-Klasse in der Produktliste im Backend als eine neue Spalte
- dargestellt. 
+Upon the module installation the module creates a new "delivery_time" product attribute by means 
+of a migration file. This attribute is represented in the product list in backend as a new column 
+due to the inheritance of the product grid class.
 
-Ist das Attribut bei der Produkterstellung nicht gefüllt, 
-wird der Standardwert "2-3 Tage" benutzt.
+If the attribute is not filled upon the product creation, 
+default value "2-3 days" is used.
 
-** PROBLEMS 
-Keine Probleme bekannt.
+** PROBLEMS
+No problems known.
 
 * TESTCASES
 ** BASIC
-*** A: Erstellen Sie ein neues Produkt. Geben Sie einen Wert für 
-         das Attribut "Lieferzeit" ein, stellen Sie dieses Attribut 
-         auf sichtbar und prüfen Sie es im Front-End.
+*** A: Create a new product. Enter a value for 
+         the attribute "delivery time", set the attribute 
+         to visible and check it in frontend.
 
-*** B: Gehen Sie Ins Back-End unter "Katalog/Produkte verwalten". 
-         Überprüfen Sie die Filterfunktion für das Attribut "Lieferzeit".
+*** B: Go to backend under "Catalogue / Product management". 
+         Check the filter function for the "delivery time" attribute.
