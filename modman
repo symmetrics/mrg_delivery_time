@@ -1,0 +1,8 @@
+build/app/code/community/Symmetrics/DeliveryTime/Block/Adminhtml/Catalog/Product/Grid.php app/code/community/Symmetrics/DeliveryTime/Block/Adminhtml/Catalog/Product/Grid.php
+build/app/code/community/Symmetrics/DeliveryTime/etc/config.xml app/code/community/Symmetrics/DeliveryTime/etc/config.xml
+build/app/code/community/Symmetrics/DeliveryTime/Helper/Data.php app/code/community/Symmetrics/DeliveryTime/Helper/Data.php
+build/app/code/community/Symmetrics/DeliveryTime/sql/deliverytime_setup/mysql4-install-0.2.1.php app/code/community/Symmetrics/DeliveryTime/sql/deliverytime_setup/mysql4-install-0.2.1.php
+build/app/code/community/Symmetrics/DeliveryTime/sql/deliverytime_setup/mysql4-upgrade-0.2.3-0.2.5.php app/code/community/Symmetrics/DeliveryTime/sql/deliverytime_setup/mysql4-upgrade-0.2.3-0.2.5.php
+build/app/etc/modules/Symmetrics_DeliveryTime.xml app/etc/modules/Symmetrics_DeliveryTime.xml
+build/app/locale/de_DE/Symmetrics_DeliveryTime.csv app/locale/de_DE/Symmetrics_DeliveryTime.csv
+build/app/locale/en_US/Symmetrics_DeliveryTime.csv app/locale/en_US/Symmetrics_DeliveryTime.csv
